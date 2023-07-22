@@ -1,32 +1,26 @@
 // sidenav init
-document.addEventListener('DOMContentLoaded', function() {
-    let sidenav = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(sidenav);
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  let sidenav = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(sidenav);
 
-// modal init
-document.addEventListener('DOMContentLoaded', function() {
-    let modal = document.querySelectorAll('.modal');
-    M.Modal.init(modal);
-});
+  // modal init
+  let modal = document.querySelectorAll('.modal');
+  M.Modal.init(modal);
 
-// datepicker calender init
-document.addEventListener('DOMContentLoaded', function() {
+  // datepicker calender init
   let datepicker = document.querySelectorAll('.datepicker');
   M.Datepicker.init(datepicker, {
-    format: "dd mmmm, yyyy", 
-    i18n: {done: "Select"}
+    format: "dd mmmm, yyyy",
+    i18n: {
+      done: "Select"
+    }
   });
-});
 
-// dropdown init
-document.addEventListener('DOMContentLoaded', function() {
+  // dropdown init
   let categoryselect = document.querySelectorAll('select');
   M.FormSelect.init(categoryselect);
-});
 
-// collapsible init
-document.addEventListener('DOMContentLoaded', function() {
+  // collapsible init
   let collapsible = document.querySelectorAll('.collapsible');
   M.Collapsible.init(collapsible);
 });
